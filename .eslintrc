@@ -1,0 +1,21 @@
+{
+    "extends": [
+        "standard",
+        "standard-preact"
+    ],
+    "rules": {
+        "semi": "off",
+        "indent": [
+            "error",
+            4
+        ],
+        "react/jsx-indent": [
+            1,
+            4
+        ],
+        "react/jsx-indent-props": [
+            1,
+            4
+        ]
+    }
+}

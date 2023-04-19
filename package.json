@@ -1,0 +1,55 @@
+{
+  "name": "league-of-millionaires-terminal",
+  "version": "2.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@vcs.app-ses.com:7999/web20land/league-of-millionaires-terminal.git"
+  },
+  "outDir": "./build",
+  "author": "garryk3",
+  "license": "ISC",
+  "scripts": {
+    "eslint": "eslint . --max-warnings 0 --cache",
+    "stylelint": "stylelint app/**/*.pcss --cache",
+    "start": "parcel -p 8080 src/index.html --open --out-dir build",
+    "build": "parcel build src/index.html --out-dir build --public-url ./"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.3.4",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "cssnano": "^4.1.10",
+    "eslint": "5.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-preact": "^1.1.6",
+    "eslint-loader": "^2.1.0",
+    "format-number": "^3.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-clean-dist": "^0.0.6",
+    "postcss-loader": "^3.0.0",
+    "precss": "^3.1.2",
+    "style-loader": "^0.22.1",
+    "stylelint": "^9.4.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "indentation": 4
+    }
+  },
+  "dependencies": {
+    "preact": "^8.4.2"
+  }
+}
